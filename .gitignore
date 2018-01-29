@@ -1,0 +1,6 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+*-*.yml
+*/src/main/resources/application-*.yml
