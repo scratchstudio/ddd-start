@@ -1,10 +1,17 @@
 package io.iamkyu.order.domain;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 import java.util.List;
 
 /**
  * @author Kj Nam
  */
+@Entity
+@Table(name = "purchase_order")
+@Access(AccessType.FIELD)
 public class Order {
     private OrderNo id;
     private List<OrderLine> orderLines;

@@ -1,11 +1,23 @@
 package io.iamkyu.order.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+
 /**
  * @author Kj Nam
  */
+@Embeddable
 public class Receiver {
+    
+    @Column(name = "receiver_name")
     private String name;
+
+    @Column(name = "receiver_phone")
     private String phoneNumber;
+
+    protected Receiver() {
+        // for JPA
+    }
 
     public Receiver(String name, String phoneNumber) {
         this.name = name;
