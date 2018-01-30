@@ -2,6 +2,7 @@ package io.iamkyu.order.infrastructure;
 
 import io.iamkyu.order.domain.Order;
 import io.iamkyu.order.domain.OrderNo;
+import io.iamkyu.order.domain.OrderRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
