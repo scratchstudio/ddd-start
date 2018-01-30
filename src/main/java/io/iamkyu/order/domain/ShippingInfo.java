@@ -1,4 +1,4 @@
-package io.iamkyu.order;
+package io.iamkyu.order.domain;
 
 /**
  * @author Kj Nam
