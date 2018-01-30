@@ -54,7 +54,9 @@ public class Order {
     
     private void calculateTotalAmounts() {
         this.totalAmount = new Money(orderLines.stream()
-                .mapToInt(x -> x.getAmounts().getValue()).sum());
+                .mapToInt(x -> x.getPrice()
+                        .multiply(x.getQuantity()).getValue())
+                .sum());
     }
 
     @Override
